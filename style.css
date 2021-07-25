@@ -1,0 +1,64 @@
+/* *, html, body {
+  box-sizing: border-box;
+} */
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, rgb(235, 120, 235), pink);
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'VT323', monospace; */
+  text-align: center;
+  margin: 0 auto;
+}
+#title {
+  font-size: 1.5rem;
+  margin: 0px 20px 30px;
+  background-color: black;
+  color: white;
+  margin: 0px 0px 75px;
+  padding: 20px 0px;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 20%;
+}
+.selection {
+  border: solid black 3px;
+  margin-bottom: 5px;
+}
+/* .rock, .paper, .scissors {
+  height: 190px;
+} */
+.rock {
+  height: 195px;
+}
+.paper {
+  height: 195px;
+}
+.scissors {
+  height: 195px;
+}
+.selectionTitle {
+  background-color: black;
+  color: white;
+  padding: 6px;
+  font-size: 1.5rem;
+}
+img {
+  width: 125px;
+  background: black;
+  padding: 15px 5px 20px;
+}
+#rockImg {
+  background-color: rgb(210, 245, 250);
+  padding: 32px;
+}
+#paperImg {
+  background-color: rgb(210, 245, 250);
+  padding: 25px;
+}
+#scissorsImg {
+  background-color: rgb(210, 245, 250);
+  padding: 20px; 
+}
