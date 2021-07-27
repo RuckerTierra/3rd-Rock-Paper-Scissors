@@ -1,40 +1,61 @@
-/* Project: build a Pokemon rock, paper, scissors game */
-// Step 1: create elements & assign value
-// Step 2: create function to loop through pokemons on click
+/* Project: build a rock, paper, scissors game */
+// Step 1: create elements
+// Step 2: 
 // Step 3: 
 // Step 4: 
 // Step 5: 
 
 
 /* ELEMENTS */ 
-// var choicesEl = document.querySelector('.select-screen').querySelectorAll('.choices');
-var selectionEl = document.querySelectorAll('.selection');
-var gameState = {
-  userSelection: "",
-  rivalSelection: ""
-};
+const userScore = 0;
+const computerScore = 0;
+const userScore_scan = document.getElementById('user-score');
+const userComputer_scan = document.getElementById('computer-score');
+const scoreBoard_div = document.querySelector("#scoreBoard");
+const resultEl = document.querySelector("#winner");
+const rockEl = document.querySelector('.rock'); 
+const paperEl = document.querySelector('.paper');
+const scissorsEl = document.querySelector('.scissors');
+
+
+rockEl.addEventListener('click', function(){
+  console.log('you clicked on rock');
+  game('rock');
+})
+paperEl.addEventListener('click', function(){
+  console.log('you clicked on paper');
+  game('rock');
+})
+scissorsEl.addEventListener('click', function(){
+  console.log('you clicked on scissors');
+
+})
+
+
 
 
 /* FUNCTIONS */
-// console.log(selectionsEl);
-var i = 0;
-while (i < selectionEl.length){
-  selectionEl[i].onclick = function(){
-  var selectionName = this.dataset.selection;
-  console.log(`i pressed the ` + selectionName);
-  gameState.selection = selectionName;
-
-  cpuPick();
-  console.log(gameState);
-  }
-  i++;
+function game(){
+  var player;
 }
 
-function randomNumber(min, max){
-  return Math.floor(Math.random() * (max - min)) + min;
-}
 
-function cpuPick(){
-  selectionEl[randomNumber(0, 3)].dataset.selection;
-  gameState.rivalselection = selectionEl[randomNumber(0, 3)].dataset.selection;
-}
+
+
+
+
+
+
+
+
+
+
+// function displayWinner(){
+//   if (your choice is winner){
+//     // console.log("You won");
+//   } else if (SPC is winner) {
+//     // console.log("You lost");
+//   } else {
+//     // console.log("It's tie!");
+//   }
+// }
